@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>Encryption & Decryption by Innovicsoft</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- or -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="shortcut icon" href="Accets/icon.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+    <div class="forms-container">
+      <div class="signin-signup">
+        <form action="#" class="sign-in-form">
+          <h2 class="title">Encryption</h2>
+          <div class="input-field">
+            <i class='bx bx-text'></i>
+            <input type="text" placeholder="Plaintext" id="plain-text" required />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="number" placeholder="Key" id="encryption-key" required />
+          </div>
+          <input type="submit" value="Encrypt" class="btn solid" onclick="encryption()" />
+          <div class="copy">
+            <p class="social-text" id="encrypt-text" onclick="copy_text()">Or Sign in with social platforms </p>
+
+          </div>
+          <div class="social-media">
+
+            <p id="copyright">A Project by <a href="https://arbabhassan.bio.link/">Arbab Hassan</a> </p>
+
+          </div>
+
+
+        </form>
+        <form action="#" class="sign-up-form">
+          <h2 class="title">Decryption</h2>
+          <div class="input-field">
+            <i class='bx bx-text'></i>
+
+            <input type="text" placeholder="Ciphertext" required id="cipher-text" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="number" placeholder="Key" required id="decryption-key" />
+          </div>
+          <input type="submit" class="btn" value="Sign up" onclick="decryption()" />
+          <p class="social-text" id="decrypt-text">Or Sign up with social platforms</p>
+          <div class="social-media">
+
+
+            <p id="copyright">A Project by <a href="https://arbabhassan.bio.link/">Arbab Hassan</a> </p>
+
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="panels-container">
+      <div class="panel left-panel">
+        <div class="content">
+          <h3>Decryption</h3>
+          <p>
+            Decrupt you Cipher using the cipher text & key. Convert into simple Message!
+          </p>
+          <button class="btn transparent" id="sign-up-btn">
+            Decryption
+          </button>
+        </div>
+        <img src="Accets/log.svg" class="image" alt="" />
+      </div>
+      <div class="panel right-panel">
+        <div class="content">
+          <h3>Encryption</h3>
+          <p>
+            Encrypt your message or plaintext into secure cipher-text with custom key.
+          </p>
+          <button class="btn transparent" id="sign-in-btn">
+            Encryption
+          </button>
+        </div>
+        <img src="Accets/register.svg" class="image" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
